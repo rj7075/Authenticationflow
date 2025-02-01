@@ -26,7 +26,7 @@ function Login() {
       return handleError("email and password are required");
     }
     try {
-      const url = `http://localhost:5000/auth/login`;
+      const url = `https://authenticationflowapi.vercel.app/login`;
       const response = await fetch(url, {
         method: "POST",
         headers: {
